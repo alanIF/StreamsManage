@@ -45,6 +45,31 @@ namespace StreamsManage.Migrations
                     b.ToTable("Links");
                 });
 
+            modelBuilder.Entity("StreamsManage.Models.StreamerModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Link")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Plataforma")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Streamers");
+                });
+
             modelBuilder.Entity("StreamsManage.Models.UserModel", b =>
                 {
                     b.Property<int>("Id")
