@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5Dvdu0M3F+/QU2PSTfWQrIiTOuAu1IRu/if5c06PPXY=",
+  "Hash": "qM97TeWJgCCHLJnuTDvB3zoAotAVV+swQMAZR/uYzw4=",
   "Source": "StreamsManage",
   "BasePath": "_content/StreamsManage",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\Documents\\Programação\\C#\\StreamsManage\\StreamsManage\\wwwroot\\js\\filter.js",
+      "SourceId": "StreamsManage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\Documents\\Programação\\C#\\StreamsManage\\StreamsManage\\wwwroot\\",
+      "BasePath": "_content/StreamsManage",
+      "RelativePath": "js/filter.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\filter.js"
     },
     {
       "Identity": "C:\\Users\\Admin\\Documents\\Programação\\C#\\StreamsManage\\StreamsManage\\wwwroot\\js\\site.js",
