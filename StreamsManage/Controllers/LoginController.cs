@@ -1,9 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using StreamsManage.Context;
+using StreamsManage.Models;
 
 namespace StreamsManage.Controllers
 {
     public class LoginController : Controller
     {
+        private readonly BD _context;
+        public LoginController(BD context)
+        {
+            _context = context;
+
+        }
         public IActionResult Index()
         {
             return View();
@@ -13,9 +21,14 @@ namespace StreamsManage.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult store()
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> store([Bind("Id,Name,Email,Password")] UserModel user)
         {
-            return View();
+            _context.Add(user);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
+       
+       
     }
 }
