@@ -28,8 +28,15 @@ namespace StreamsManage.Controllers
             return RedirectToAction(nameof(Index));
 
         }
-        public IActionResult delete() {
-            return View("Index");
+        // POST: StreamerModels/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            var linkModel = await _context.Links.FindAsync(id);
+            _context.Links.Remove(linkModel);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
     }
 }
