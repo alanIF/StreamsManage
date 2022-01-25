@@ -22,10 +22,10 @@ namespace StreamsManage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> store(LinkModel link) {
+        public async Task<IActionResult> store([Bind("Id,Name,titulo,idUser")] LinkModel link) {
             _context.Add(link);
             await _context.SaveChangesAsync();
-            return View("Index");
+            return RedirectToAction(nameof(Index));
 
         }
         public IActionResult delete() {
