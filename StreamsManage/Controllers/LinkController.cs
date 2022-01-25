@@ -22,7 +22,7 @@ namespace StreamsManage.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> store([Bind("Id,Name,titulo,idUser")] LinkModel link) {
+        public async Task<IActionResult> store(LinkModel link) {
             _context.Add(link);
             await _context.SaveChangesAsync();
             return View("Index");

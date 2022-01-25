@@ -1,0 +1,21 @@
+﻿
+@model StreamsManage.Models.LinkModel
+<div class="card">
+  <div class="card-header">Cadastrar novo Link</div>
+  <div class="card-body">
+       <form action="store" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="Name" id="name" required placeholder="Nome"/>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="titulo" id="titulo" required placeholder="Link"/>
+            </div>
+            <input type="hidden" id="idUser" name="idUser" value="1" />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index"> <button type="button" class="btn btn-info"> Voltar para tela inicial</button></a>
+            </div>
+        </form>
+      </div>
+      </div>
+       
