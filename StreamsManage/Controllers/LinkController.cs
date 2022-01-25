@@ -19,6 +19,48 @@ namespace StreamsManage.Controllers
         public IActionResult create() { 
             return View();
         }
+        // GET: StreamerModels/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var linkModel = await _context.Links.FindAsync(id);
+            if (linkModel == null)
+            {
+                return NotFound();
+            }
+            return View(linkModel);
+
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int id, [Bind("Id,Name,titulo,idUser")] LinkModel linkModel)
+        {
+            if (id != linkModel.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(linkModel);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(linkModel);
+        }
+
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

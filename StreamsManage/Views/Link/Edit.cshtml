@@ -1,0 +1,23 @@
+﻿
+@model StreamsManage.Models.LinkModel
+<div class="card">
+  <div class="card-header">Atualizar Link</div>
+  <div class="card-body">
+       <form asp-action="update" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="Name" id="Name" required placeholder="Nome" value="@Model.Name"/>
+            </div>
+                        <input type="hidden" name="Id" id="Id" value="@Model.Id"  />
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="titulo" id="titulo" required placeholder="Link" value="@Model.titulo"/>
+            </div>
+            <input type="hidden" id="idUser" name="idUser" value="1" />
+            <div class="form-group">
+                <input type="submit" value="Atualizar" class="btn btn-primary" />
+                <a asp-action="Index"> <button type="button" class="btn btn-info"> Voltar para tela inicial</button></a>
+            </div>
+        </form>
+      </div>
+      </div>
+       
