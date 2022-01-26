@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using StreamsManage.Context;
 using StreamsManage.Models;
 
 namespace StreamsManage.Controllers
 {
-    public class LoginController : Controller
+    // paginas que nao precisa está  logado
+    [AllowAnonymous]
+     public class LoginController : Controller
     {
         private readonly BD _context;
         public LoginController(BD context)

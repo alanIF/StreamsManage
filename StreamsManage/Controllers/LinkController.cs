@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StreamsManage.Context;
 using StreamsManage.Models;
 
 namespace StreamsManage.Controllers
 {
+
+    [Authorize]
     public class LinkController : Controller
     {
         private readonly BD _context;

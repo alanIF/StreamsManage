@@ -260,3 +260,11 @@ C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\
 C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\obj\Debug\net6.0\StreamsManage.MvcApplicationPartsAssemblyInfo.cs
