@@ -22,7 +22,7 @@ namespace StreamsManage.Controllers
         {
             if (User.Identity.IsAuthenticated) {
 
-                return Json(new { Msg = "Usuario logado com sucesso" });
+                return RedirectToAction("Index", "Home");
 
             }
             return View();
@@ -56,6 +56,8 @@ namespace StreamsManage.Controllers
                     ExpiresUtc = DateTime.Now.AddHours(1)
                 
                 });
+                return RedirectToAction("Index", "Home");
+
                 return Json(new { Msg = "Usuario logado com sucesso" });
 
             }
