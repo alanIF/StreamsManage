@@ -1,4 +1,3 @@
-C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\obj\Debug\net6.0\StreamsManage.csproj.AssemblyReference.cache
 C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\obj\Debug\net6.0\StreamsManage.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\obj\Debug\net6.0\StreamsManage.AssemblyInfoInputs.cache
 C:\Users\Admin\Documents\Programação\C#\StreamsManage\StreamsManage\obj\Debug\net6.0\StreamsManage.AssemblyInfo.cs
